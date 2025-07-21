@@ -1,4 +1,4 @@
-# Tic Tac Toe - SE1.0.0
+# Tic Tac Toe - SE1.0.0>
 
 ## Dependencias de Python
 - customtkinter >= 5.0.0
