@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe Node</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-dark text-light">
+  <div class="container py-4">
+    <h1 class="text-center mb-3">Tic Tac Toe</h1>
+
+    <div id="select-symbol" class="text-center mb-3">
+      <span>Selecciona tu ficha: </span>
+      <button class="btn btn-danger btn-sm" id="btn-x">X</button>
+      <button class="btn btn-success btn-sm" id="btn-o">O</button>
+    </div>
+    <div id="scoreboard" class="row mb-3">
+      <div class="col text-center">
+        <h5>Jugador</h5>
+        <span id="score-player" class="fs-3">0</span>
+      </div>
+      <div class="col text-center">
+        <h5>Empates</h5>
+        <span id="score-draw" class="fs-3">0</span>
+      </div>
+      <div class="col text-center">
+        <h5>IA</h5>
+        <span id="score-ai" class="fs-3">0</span>
+      </div>
+    </div>
+    <div id="board" class="d-flex flex-column align-items-center mb-3"></div>
+    <div class="text-center mb-2">
+      <span id="status" class="fs-5"></span>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-success" id="btn-new">Nuevo Juego</button>
+      <button class="btn btn-secondary" id="btn-reset-score">Resetear Puntaje</button>
+    </div>
+  </div>
+  <script src="js/game.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
